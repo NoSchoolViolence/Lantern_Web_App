@@ -5,20 +5,20 @@ class Search extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <form>
+          <label>
+            Enter comma separated behavior terms: 
+              <br/>
+              <input type="text" name="search" />
+          </label>
+          <br/> 
+          <input type="submit" value="Search" />
           
-          <p>
-            Edit <code>TEST/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <input
+            name="Public"
+            type="checkbox"
+          />Public
+        </form>
       </div>
     );
   }

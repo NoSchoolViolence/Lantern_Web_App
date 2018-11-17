@@ -1,5 +1,5 @@
 const ROUTES={
-    SEARCH: '/',
+    SEARCH: '/search',
 };
 
 export default ROUTES;
