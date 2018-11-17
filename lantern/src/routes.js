@@ -1,5 +1,6 @@
-const ROUTES = {
-  LANDING: '/'
+const ROUTES={
+    LANDING: '/',
+    SEARCH: '/search',
 };
 
 export default ROUTES;

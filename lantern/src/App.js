@@ -2,30 +2,22 @@ import React, { Component } from 'react';
 import Landing from './landing/landing';
 import { BrowserRouter, Route } from 'react-router-dom';
 // import logo from './logo.svg';
-import Text from './behaviors.txt';
+// import Text from './behaviors.txt';
 import ROUTES from './routes';
 import './App.css';
+import {BrowserRouter, Route} from 'react-router-dom';
+import ROUTES from './routes';
+import Search from './search/Search';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header> */}
-        <Landing/>
-        {/* <Text/> */}
+        <BrowserRouter>
+          <Route exact path={ROUTES.LANDING} component={Landing}/>
+          <Route exact path={ROUTES.SEARCH} component={Search}/>
+        </BrowserRouter>
       </div>
     );
   }
