@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Landing from './landing/landing';
+import { BrowserRouter, Route } from 'react-router-dom';
 // import logo from './logo.svg';
+import Text from './behaviors.txt';
+import ROUTES from './routes';
 import './App.css';
 
 class App extends Component {
@@ -22,6 +25,7 @@ class App extends Component {
           </a>
         </header> */}
         <Landing/>
+        {/* <Text/> */}
       </div>
     );
   }
