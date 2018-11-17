@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import './Search.css';
 import {Grid, Row, Col} from 'react-bootstrap';
 
+=======
+import ROUTES from '../routes';
+>>>>>>> 168fe6fe223ebf44586a23d38720e445e43b20fc
 
 class Search extends Component {
   
@@ -14,6 +18,7 @@ class Search extends Component {
      
     );
     return (
+<<<<<<< HEAD
       <div className="Search">
         <div className="searchBox">
         </div>
@@ -26,6 +31,23 @@ class Search extends Component {
     					{listItems}
   			</div>
         
+=======
+      <div className="App">
+        <form>
+          <label>
+            Enter comma separated behavior terms:
+              <br />
+            <input type="text" name="search" />
+          </label>
+          <br />
+          <input type="submit" value="Search" />
+          <div><a href={ROUTES.RESULTS}>Results</a></div>
+          <input
+            name="Public"
+            type="checkbox"
+          />Public
+        </form>
+>>>>>>> 168fe6fe223ebf44586a23d38720e445e43b20fc
       </div>
     );
   }
