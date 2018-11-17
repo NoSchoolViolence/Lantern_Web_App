@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Landing from './landing/landing';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import ROUTES from './routes';
 import './App.css';
 import Search from './search/Search';
