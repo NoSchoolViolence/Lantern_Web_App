@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import ROUTES from '../routes';
 
 class Search extends Component {
   render() {
@@ -7,13 +7,13 @@ class Search extends Component {
       <div className="App">
         <form>
           <label>
-            Enter comma separated behavior terms: 
-              <br/>
-              <input type="text" name="search" />
+            Enter comma separated behavior terms:
+              <br />
+            <input type="text" name="search" />
           </label>
-          <br/> 
+          <br />
           <input type="submit" value="Search" />
-          
+          <div><a href={ROUTES.RESULTS}>Results</a></div>
           <input
             name="Public"
             type="checkbox"
