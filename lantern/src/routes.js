@@ -1,4 +1,5 @@
 const ROUTES={
+    LANDING: '/',
     SEARCH: '/search',
 };
 
