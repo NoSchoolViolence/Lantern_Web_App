@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ROUTES from '../../routes';
 
 class Login extends Component {
   render() {
@@ -13,7 +14,7 @@ class Login extends Component {
             <label>Password:
               <input type='password' name='password'></input>
             </label>
-            <input type='submit' value='Login'></input>
+            <div><a href={ROUTES.SEARCH}>Log In</a></div>
           </fieldset>
         </form>
       </div>
