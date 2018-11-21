@@ -11,8 +11,7 @@ Technologies: React (create-react-app)
 Initial Contributors: David Stoll, Jimmy Chang, Neelima Potharaj, Safi Cham, Sidney Gordon 
 
 Volunteer Requirement: Frontend/Full-Stack Developers --> React and JS experience, working APIs a plus, Web development experience;   
-                       UI/UX or Graphic Designers --> HTML, CSS experience preferred if have some understanding of modern design         
-                                                      principles and React 
+UI/UX or Graphic Designers --> HTML, CSS experience preferred if have some understanding of modern design principles and React 
 
 # Design Details and Progress info 
 
@@ -32,7 +31,7 @@ Volunteer Requirement: Frontend/Full-Stack Developers --> React and JS experienc
 4. Submit button
 ### Results - WireFrame still in progress
 1. 4 div filled in with a color (fill-in percentage depending upon correlation value), each div for each violence term to represent correlation of behavior terms to each violence term
-  - each div is clickable, clicking it enables a small pop-up with information on that violence term; pop-up contains a "X" button to       close each dive and a button linking to the related intervention page 
+    - each div is clickable, clicking it enables a small pop-up with information on that violence term; pop-up contains a "X" button to       close each dive and a button linking to the related intervention page 
 2. Back button - link to the search page 
 3. Buttons at the bottom of the page to share with teacher/principal, each button directly sends the info to the respective individual, can be made to enable a pop-up to provide more customized sharing expierience for future implementation 
 4. Link to open a pop-up to view the respective behavior terms 
