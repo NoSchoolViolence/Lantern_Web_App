@@ -10,8 +10,9 @@ Technologies: React (create-react-app)
 
 Initial Contributors: David Stoll, Jimmy Chang, Neelima Potharaj, Safi Cham, Sidney Gordon 
 
-Volunteer Requirement: Frontend/Full-Stack Developers --> React and JS experience, working APIs a plus, Web development experience;   
-UI/UX or Graphic Designers --> HTML, CSS experience preferred if have some understanding of modern design principles and React 
+Volunteer Requirement: 
+    - Frontend/Full-Stack Developers --> React and JS experience, working APIs a plus, Web development experience;   
+    - UI/UX or Graphic Designers --> HTML, CSS experience preferred if have some understanding of modern design principles and React 
 
 # Design Details and Progress info 
 
