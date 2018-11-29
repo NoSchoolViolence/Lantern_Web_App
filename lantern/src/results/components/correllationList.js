@@ -46,39 +46,39 @@ class CorrellationList extends Component {
         description: "Ipsum",
         link: 'placeholder'
       }, {
-        id: "5",
-        name: "fighting",
-        percentage: 50,
-        description: "Ipsum",
-        link: 'placeholder'
-      }, {
-        id: "6",
-        name: "drug use",
-        percentage: 60,
-        description: "Ipsum",
-        link: 'placeholder'
-      }, {
-        id: "7",
-        name: "gang activities",
-        percentage: 70,
-        description: "Ipsum",
-        link: 'placeholder'
-      }, {
-        id: "8",
-        name: "verbal abuse",
-        percentage: 80,
-        description: "Ipsum",
-        link: 'placeholder'
-      }, {
-        id: "9",
-        name: "sexual violence",
-        percentage: 90,
-        description: "Ipsum",
-        link: 'placeholder'
-      }, {
+      //   id: "5",
+      //   name: "fighting",
+      //   percentage: 50,
+      //   description: "Ipsum",
+      //   link: 'placeholder'
+      // }, {
+      //   id: "6",
+      //   name: "drug use",
+      //   percentage: 60,
+      //   description: "Ipsum",
+      //   link: 'placeholder'
+      // }, {
+      //   id: "7",
+      //   name: "gang activities",
+      //   percentage: 70,
+      //   description: "Ipsum",
+      //   link: 'placeholder'
+      // }, {
+      //   id: "8",
+      //   name: "verbal abuse",
+      //   percentage: 80,
+      //   description: "Ipsum",
+      //   link: 'placeholder'
+      // }, {
+      //   id: "9",
+      //   name: "sexual violence",
+      //   percentage: 90,
+      //   description: "Ipsum",
+      //   link: 'placeholder'
+      // }, {
         id: "10",
         name: "sucidal ideation",
-        percentage: 100,
+        percentage: 85,
         description: "Ipsum",
         link: 'placeholder'
       }
@@ -86,22 +86,27 @@ class CorrellationList extends Component {
 
     return (
       <div className="CorrellationList">
-        <ul>
+
           {
             data.map((item, i) => {
+
+              const pStyle = {
+                height: 50,
+                width: `${item.percentage}%`
+              }
+
               return (
-                <li key={i}>
-                  <div>
-                    <h3>Violence Type: {item.name}</h3>
-                    <p>Percentage: {item.percentage}%</p>
-                    <p>Description: {item.description}</p>
-                    <a href={item.link}>More Information</a>
+                <div key={i} className="CorrellationItem">
+                  <h3>Violence Type: {item.name}</h3>
+                  <div className='percentContainer'>
+                    <div className="ItemPercent" style={pStyle}></div>
                   </div>
-                </li>
+                  {/* <p>Description: {item.description}</p>
+                  <a href={item.link}>More Information</a> */}
+                </div>
               )
             })
           }
-        </ul>
       </div>
     );
   }

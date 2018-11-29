@@ -22,11 +22,26 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CorrellationList {
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 75%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.CorrellationItem {
+  /* border: 2px dotted red; */
+  width: 90%;
+  margin: 5px;
+}
+
+.percentContainer {
+  border: 1px solid black;
+}
+.ItemPercent {
+  background-color: blue;
 }
