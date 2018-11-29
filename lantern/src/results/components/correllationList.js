@@ -1,21 +1,32 @@
 import React, { Component } from "react";
-// import Modal from 'modal';
+import Modal from './modal';
 
 class CorrellationList extends Component {
+  // constructor() {
 
-  constructor(props) {
+  //   super();
 
-    super(props);
+    
+  // }
 
-    this.state = { editing: false };
+  state = { show: false };
+  showModal = () => {
+    this.setState({ show: true });
+  };
 
-    this.toggleModal = this.toggleModal.bind(this);
+  hideModal = () => {
+    this.setState({ show: false });
   }
 
-  toggleModal() {
-    let editing = !this.state.editing;
-    this.setState({ editing })
-  }
+  //   this.state = { editing: false };
+
+  //   this.toggleModal = this.toggleModal.bind(this);
+  // }
+
+  // toggleModal() {
+  //   let editing = !this.state.editing;
+  //   this.setState({ editing })
+  // }
 
   render() {
     let data = [
@@ -23,27 +34,27 @@ class CorrellationList extends Component {
         id: "1",
         name: "bullying",
         percentage: 10,
-        description: "Ipsum",
+        description: "bully Ipsum",
         link: 'placeholder'
       },
       {
         id: "2",
         name: "weapons use",
         percentage: 20,
-        description: "Ipsum",
+        description: "WU Ipsum",
         link: 'placeholder'
       },
       {
         id: "3",
         name: "sexual harrasment",
         percentage: 30,
-        description: "Ipsum",
+        description: "More SH Ipsum",
         link: 'placeholder'
       }, {
         id: "4",
         name: "self-harm",
         percentage: 40,
-        description: "Ipsum",
+        description: "SH Ipsum",
         link: 'placeholder'
       }, {
       //   id: "5",
@@ -79,7 +90,7 @@ class CorrellationList extends Component {
         id: "10",
         name: "sucidal ideation",
         percentage: 85,
-        description: "Ipsum",
+        description: "SI ipsum",
         link: 'placeholder'
       }
     ];
@@ -96,13 +107,19 @@ class CorrellationList extends Component {
               }
 
               return (
-                <div key={i} className="CorrellationItem">
-                  <h3>Violence Type: {item.name}</h3>
-                  <div className='percentContainer'>
-                    <div className="ItemPercent" style={pStyle}></div>
+                <div key={i}>
+                <Modal show={this.state.show} handleClose={this.hideModal}>
+                  <p>Description: {item.description}</p>
+                  <a href={item.link}>More Information</a>
+                </Modal>
+                  <div onClick={this.showModal} className="CorrellationItem">
+                    <h3>Violence Type: {item.name}</h3>
+                    <div className='percentContainer'>
+                      <div className="ItemPercent" style={pStyle}></div>
+                    </div>
+                    {/* <p>Description: {item.description}</p>
+                    <a href={item.link}>More Information</a> */}
                   </div>
-                  {/* <p>Description: {item.description}</p>
-                  <a href={item.link}>More Information</a> */}
                 </div>
               )
             })
@@ -110,6 +127,7 @@ class CorrellationList extends Component {
       </div>
     );
   }
+
 }
 
 export default CorrellationList;

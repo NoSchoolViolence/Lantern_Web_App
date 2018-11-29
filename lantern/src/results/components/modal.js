@@ -1,21 +1,34 @@
 import React from 'react';
 
-class Modal extends React.Component {
+const Modal = ({ handleClose, show, children }) => {
+  const showHideClassName = show ? "modal display-block" : 'modal display-none';
 
-  render() {
+  return (
+    <div className={showHideClassName}>
+      <div className="modal-main">
+        {children}
+        <button onClick={handleClose}>Close Me</button>
+      </div>
+    </div>
+  )
+}
 
-    return (
+// class Modal extends React.Component {
 
-      <div className="overlay">
+//   render() {
+
+//     return (
+
+      {/* <div className="overlay">
         <div className="modal">
           {this.props.children}
           <button onClick={this.props.close}>Close Me</button>
         </div>
-      </div>
-    )
+      </div> */}
+//     )
 
-  }
+//   }
 
-}
+// }
 
 export default Modal;
