@@ -28,14 +28,25 @@
   flex-direction: column-reverse;
   width: 75%;
   margin: auto;
+  margin-bottom: 10px;
   align-items: center;
   justify-content: center;
   
 }
 
+.CorrellationContainer {
+  min-width: 300px;
+  width: 95%;
+  margin-left: 7%;
+  
+}
+
+
 .CorrellationItem {
   width: 90%;
   margin: 5px;
+  min-width: 280px;
+  outline: 1px solid red;
 }
 
 .percentContainer {
