@@ -22,6 +22,8 @@
   color: #61dafb;
 }
 
+/* CORRELLATION LIST STYLING */
+
 .CorrellationList {
   border: 3px solid black;
   display: flex;
@@ -38,23 +40,23 @@
   min-width: 300px;
   width: 95%;
   margin-left: 7%;
-  
 }
-
 
 .CorrellationItem {
   width: 90%;
   margin: 5px;
   min-width: 280px;
-  outline: 1px solid red;
 }
 
 .percentContainer {
   border: 1px solid black;
 }
+
 .ItemPercent {
   background-color: blue;
 }
+
+/* MODAL STYLING */
 
 .modal {
   position: fixed;

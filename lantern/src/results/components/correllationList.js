@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Modal from './modal';
 
 class CorrellationList extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { 
       show: false,
       activeIndex: null
@@ -67,7 +67,6 @@ class CorrellationList extends Component {
 
             return (
               <div key={i} className="CorrellationContainer">
-                {/* {console.log(i)} */}
                 <Modal show={this.state.activeIndex === i ? true : false} handleClose={this.hideModal}>
                   <p>Description: { item.description }</p>
                   <a href={item.link}>More Information</a>
@@ -76,7 +75,7 @@ class CorrellationList extends Component {
                 <div onClick={() => this.showModal(i)} className='CorrellationItem' >
                   <h3>Violence Type: {item.name}</h3>
                   <div className='percentContainer'>
-                    <div className="ItemPercent" style={pStyle}>
+                    <div className="ItemPercent" style={ pStyle }>
                     </div>
                   </div>
                 </div>
