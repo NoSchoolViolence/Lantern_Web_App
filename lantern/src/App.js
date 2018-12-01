@@ -11,13 +11,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-<<<<<<< HEAD
         
         <header>
           <h1>The Lantern</h1>
         </header>
-=======
->>>>>>> 168fe6fe223ebf44586a23d38720e445e43b20fc
         <BrowserRouter>
           <Route exact path={ROUTES.LANDING} component={Landing} />
         </BrowserRouter>
