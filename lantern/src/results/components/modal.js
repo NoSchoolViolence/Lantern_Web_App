@@ -6,8 +6,8 @@ const Modal = (props) => {
   return (
     <div className={showHideClassName}>
       <div className="modal-main">
+        <button onClick={props.handleClose}>X</button>
         {props.children}
-        <button onClick={props.handleClose}>Close Me</button>
       </div>
     </div>
   )
