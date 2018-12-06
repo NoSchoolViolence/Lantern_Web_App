@@ -5,7 +5,7 @@ class Search extends Component {
   constructor(props){
     super(props)
     this.state = {
-      name: 'Enter the behaviors you notice',
+      name: 'Enter the behaviors you noticed',
       tasks: []
     }
   
@@ -43,19 +43,20 @@ class Search extends Component {
       <div>
         <h1>{this.state.name}</h1>
         <div>
-          <ol>
+          
+          <div>
+            <form  onSubmit={this.handleSubmit}>
+              <input value={this.state.task} onChange={this.task}/>
+              <button type="add" onClick={this.addTask}>Add</button>
+            </form>
+          </div>
+          <ul>
             {tasks}
             {
               this.state.task &&
               <li>{this.state.task}</li>
             }
-          </ol>
-          <div>
-            <form  onSubmit={this.handleSubmit}>
-              <input value={this.state.task} onChange={this.task}/>
-              <button type="submit" onClick={this.addTask}>Add</button>
-            </form>
-          </div>
+          </ul>
         </div>
       </div>
     )
