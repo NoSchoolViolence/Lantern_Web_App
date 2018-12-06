@@ -1,43 +1,58 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'react-grid-system';
 
 
 class Search extends Component {
   constructor(props){
     super(props)
+
+    // list "terms" holds all entered search terms, except for the ones that are removed
+    // "name" is to hold the label for directions
     this.state = {
       name: 'Enter the behaviors you noticed',
-      tasks: []
+      terms: []
     }
   
+    
     this.handleSubmit = this.handleSubmit.bind(this)
-    this.addTask = this.addTask.bind(this);
-    this.removeTask = this.removeTask.bind(this);
-    this.task = this.task.bind(this);
+    this.addTerm = this.addTerm.bind(this);
+    this.removeTerm = this.removeTerm.bind(this);
+    this.term = this.term.bind(this);
+  
   }
 
+  // this function is to clear the default behavior of "form" component
   handleSubmit(event){
     event.preventDefault()
     //event.target.name(event)
   }
-  task(event) {
-    this.setState({task:event.target.value})
+
+  // this function is to set the state for state variable "term" with the entered value in the text field
+  term(event) {
+    this.setState({term:event.target.value})
   }
-  addTask(event) {
-    if (!this.state.task) return
-    const tasks = this.state.tasks
-    tasks.push(this.state.task)
-    this.setState({tasks:tasks, task:''})
+
+  // this function is to add the entered term into the list "terms"
+  addTerm(event) {
+    if (!this.state.term) return
+    const terms = this.state.terms
+    terms.push(this.state.term)
+    this.setState({terms:terms, term:''})
   }
-  removeTask(index, event) {
-    const tasks = this.state.tasks
-    tasks.splice(index, 1)    
-    this.setState({tasks})
+
+  // this function is to remove a term from the list "terms"
+  removeTerm(index, event) {
+    const terms = this.state.terms
+    terms.splice(index, 1)    
+    this.setState({terms})
   }
+
+
   render(){
-    const tasks = (this.state.tasks).map((task,index)=>(
-      <li>
-        {task} <button name="removeTask" onClick={event=>this.removeTask(index,event)}>x</button>
-      </li>
+    const terms = (this.state.terms).map((term,index)=>(
+      <Col sm={3}>
+        {term} <button name="remove" onClick={event=>this.removeTerm(index,event)}>x</button>
+      </Col>
     ))
     return (
       <div>
@@ -46,162 +61,21 @@ class Search extends Component {
           
           <div>
             <form  onSubmit={this.handleSubmit}>
-              <input value={this.state.task} onChange={this.task}/>
-              <button type="add" onClick={this.addTask}>Add</button>
+              <input value={this.state.term} onChange={this.term}/>
+              <button type="add" onClick={this.addTerm}>Add</button>
             </form>
           </div>
-          <ul>
-            {tasks}
-            {
-              this.state.task &&
-              <li>{this.state.task}</li>
-            }
-          </ul>
+            <Container>
+            <Row>
+            {terms}
+            
+              {this.state.term && this.state.term}
+            </Row>
+            </Container>
         </div>
       </div>
     )
   }
- /*  constructor(props) {
-    super(props);
-    this.state={
-      todos:[],
-      count: 0,
-    };
-
-    this.removeString = this.removeString.bind(this);
-    this.save = this.save.bind(this);
-    this.handleClickIndex = this.handleClickIndex.bind(this);
-  }
-
- 
-  
-  save(e) {
-  
-    if(e.keyCode === 13){
-    var count = this.state.count + 1;
-    this.setState({count:count});
-    var item = {value: this.newText.value}
-
-    var todos = [...this.state.todos];
-    todos.push(item);
-    this.setState({todos: todos});
-    
-    // Resets the textbox after "enter"
-    this.newText.value ="";
-    }
-
-    
-    
-  }
-
-  removeString(key) {
-    //var todos = [...this.state.todos];
-
-    
-    
-    //todos.splice( todos.indexOf(todo), 1 );
-    /* var groupKey =  todo.groupKey;
-    if (todos.hasOwnProperty(groupKey)){
-      todos.pop();
-    } 
-    
-   this.setState({todos:this.state.todos.filter((key, _) => key !== key)});
-  }
-
- /*  removeString(key, value){
-    
-   
-  }  
-
-
-
-  submit(e){
-
-
-
-  }
-
-  handleClickIndex(index, event){
-    eval(this[event.target.name]).bind(this)(index, event)
-  }
-  
-  removeTask(index, event) {
-    const tasks = this.state.todos
-    tasks.splice(index, 1)    
-    this.setState({todos:tasks})
-  }
-
-  render(){
-      return(
-          <div className="list">
-            <h1> TO-DO List</h1>
-            <input type="text" ref={(ip) => {this.newText = ip}} onKeyDown={this.save}/>
-            <button  name="removeTask" onClick={this.submit.bind(this)} className="btn btn-primary glyphicon glyphicon-floppy-saved">Save
-            </button>
-            <ul>
-              {this.state.todos.map((value, index) => {
-                    return <button key = {index} onClick={(e) => this.removeTask.bind(this, index)} className="btn btn-primary glyphicon glyphicon-floppy-saved">{value}</button>
-               })}
-              
-            </ul> 
-          </div>
-      )
-  }
- */
-/*   getInitialState(){
-    return {
-      todos: []
-    }
-  }
-  
-  constructor(props) {
-    super(props);
-    this.state = {value:''}
-
-    this.handleChange = this.handleChange.bind(this);
-    this.keyPress = this.keyPress.bind(this);
-  } 
-
-  save() {
-    var todos = [...this.state.todos];
-    todos.push(this.state.value);
-    console.log(todos)
-    this.setState({todos});
-  }
-
-  handleChange(e) {
-    this.setState({ value: e.target.value });
-  }
-
-  /* keyPress(e){
-    if(e.keyCode === 13){
-      this.save()
-      console.log('value', e.target.value);
-      // put the login here
-    }
-  } */
-
-  /* render() {
-    return (
-      <div className="App">
-        <form>
-          <label>
-            Enter comma separated behavior terms: 
-              <br/>
-              <input type="text" value={this.state.value} onKeyDown={this.keyPress} onChange={this.handleChange} name="search" fullWidth={true}/>
-          </label>
-          <br/> 
-          <input type="submit" value="Search" />
-          
-          
-          <input
-            name="Public"
-            type="checkbox"
-          />Public
-        </form>
-      </div>
-    );  
-  } */
 }
 
 export default Search;
