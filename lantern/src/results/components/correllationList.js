@@ -5,7 +5,7 @@ class CorrellationList extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      show: false,
+      showDetails: false,
       activeIndex: null
     };
   }
@@ -15,7 +15,7 @@ class CorrellationList extends Component {
   }
 
   hideModal = () => {
-    this.setState({ show: false });
+    this.setState({ showDetails: false });
     this.setState({ activeIndex: null })
   }
 

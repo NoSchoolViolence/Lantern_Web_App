@@ -50,6 +50,7 @@
 
 .percentContainer {
   border: 1px solid black;
+  margin-bottom: 25px;
 }
 
 .ItemPercent {
@@ -98,6 +99,10 @@
   display: none;
 }
 
+.buttonSpace {
+  justify-content: space-around;
+}
+
 /* HEADER STYLING */
 
 header {
@@ -123,7 +128,6 @@ header > img {
 
 footer {
   border: 3px solid black;
-  background-color: lightgreen;
   margin-top: 100px;
   width: 100%;
 }
