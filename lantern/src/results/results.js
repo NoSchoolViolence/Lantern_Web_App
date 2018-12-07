@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CorrelationList from "./components/correllationList";
+import Modal from './components/modal';
 import ROUTES from "../routes";
 
 class Results extends Component {
@@ -13,7 +14,9 @@ class Results extends Component {
           <CorrelationList />
         </div>
         <div>
-          School information goes here
+
+            School information goes here
+ 
         </div>
         <div>
           Searched Behaviors go here
