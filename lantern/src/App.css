@@ -97,3 +97,33 @@
 .display-none {
   display: none;
 }
+
+/* HEADER STYLING */
+
+header {
+  display: flex;
+  border: 3px solid black;
+  justify-content: space-between;
+}
+
+header > img {
+  height: 100px;
+}
+
+.headerLink {
+  text-decoration: none;
+  color: black;
+}
+
+.headerText {
+  align-self: center;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  border: 3px solid black;
+  background-color: lightgreen;
+  margin-top: 100px;
+  width: 100%;
+}
