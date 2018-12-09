@@ -1,10 +1,13 @@
 # Hackfest_November 
-Last edited: 11/20/2018
+Last edited: 12/09/2018
 Edited by: Neelima Potharaj 
 
-Event: Hack to Give Thanks by DemocracyLab, 11/17/2018
+Contributors: David Stoll, Jimmy Chang, Neelima Potharaj, Patrizia Trammel
 
 Lantern Frontend First Version: Basic Wireframe Design and Initial Setup 
+
+
+Started at Event: Hack to Give Thanks by DemocracyLab, 11/17/2018
 
 Technologies: React (create-react-app) 
 
