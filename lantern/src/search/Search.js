@@ -11,7 +11,7 @@ class Search extends Component {
     // list "terms" holds all entered search terms, except for the ones that are removed
     // "name" is to hold the label for directions
     this.state = {
-      name: 'Enter you noticed',
+      name: 'Enter the behaviors you noticed',
       terms: [],
       showComponentResults: false,
       showComponentTerms: true
@@ -55,12 +55,11 @@ class Search extends Component {
   submitPage(){
     this.setState({
       showComponentResults: true,
-      showComponentTerms: false
+      // does not display terms if set to false
+      showComponentTerms: true
     });
-   //return <Results data={this.state.terms} />;
   }
-
-
+  
 
   render(){
     const terms = (this.state.terms).map((term,index)=>(
@@ -82,13 +81,11 @@ class Search extends Component {
               <button type="add" onClick={this.addTerm}>Add</button>
               <div>
               <button type="submit" onClick={this.submitPage}>Submit</button>
-              {this.state.showComponentResults ?
-                <Results data={this.state.terms} />:
-                null
-              }
+             
               </div>
             </form>
-          </div>
+            {/* Displays Terms */}
+            
             <Container>
             <Row>
             {this.state.showComponentTerms ? terms : null}
@@ -96,6 +93,14 @@ class Search extends Component {
               {this.state.showComponentTerms ? this.state.term && this.state.term : null}
             </Row>
             </Container>
+            
+              {/* Displays Results */}
+                  {this.state.showComponentResults ?
+                <Results data={this.state.terms} />:
+               null
+                  }
+          </div>
+          
             
         </div>
         

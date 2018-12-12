@@ -6,8 +6,9 @@ class Results extends Component {
   render() {
     return (
       <div className="Results">
+              <div><a href={ROUTES.SEARCH}>Clear</a></div>
+
         <h1>Results</h1>
-        <div><a href={ROUTES.SEARCH}>Back</a></div>
         <div className="Correlation">
           <h2>Correlation</h2>
           <CorrelationList />
@@ -18,6 +19,7 @@ class Results extends Component {
         <div>
           Searched Behaviors go here
         </div>
+       
       </div>
     );
   }
