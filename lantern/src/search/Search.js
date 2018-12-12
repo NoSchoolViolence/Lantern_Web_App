@@ -73,6 +73,7 @@ class Search extends Component {
             </Row>
             </Container>
         </div>
+        
       </div>
     )
   }
