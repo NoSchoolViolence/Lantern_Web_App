@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
+import Results from '../results/results';
+import ROUTES from "../routes";
 
 
 class Search extends Component {
@@ -9,8 +11,10 @@ class Search extends Component {
     // list "terms" holds all entered search terms, except for the ones that are removed
     // "name" is to hold the label for directions
     this.state = {
-      name: 'Enter the behaviors you noticed',
-      terms: []
+      name: 'Enter you noticed',
+      terms: [],
+      showComponentResults: false,
+      showComponentTerms: true
     }
   
     
@@ -18,6 +22,7 @@ class Search extends Component {
     this.addTerm = this.addTerm.bind(this);
     this.removeTerm = this.removeTerm.bind(this);
     this.term = this.term.bind(this);
+    this.submitPage = this.submitPage.bind(this);
   
   }
 
@@ -47,6 +52,15 @@ class Search extends Component {
     this.setState({terms})
   }
 
+  submitPage(){
+    this.setState({
+      showComponentResults: true,
+      showComponentTerms: false
+    });
+   //return <Results data={this.state.terms} />;
+  }
+
+
 
   render(){
     const terms = (this.state.terms).map((term,index)=>(
@@ -54,6 +68,9 @@ class Search extends Component {
         {term} <button name="remove" onClick={event=>this.removeTerm(index,event)}>x</button>
       </Col>
     ))
+
+
+    
     return (
       <div>
         <h1>{this.state.name}</h1>
@@ -63,15 +80,23 @@ class Search extends Component {
             <form  onSubmit={this.handleSubmit}>
               <input value={this.state.term} onChange={this.term}/>
               <button type="add" onClick={this.addTerm}>Add</button>
+              <div>
+              <button type="submit" onClick={this.submitPage}>Submit</button>
+              {this.state.showComponentResults ?
+                <Results data={this.state.terms} />:
+                null
+              }
+              </div>
             </form>
           </div>
             <Container>
             <Row>
-            {terms}
+            {this.state.showComponentTerms ? terms : null}
             
-              {this.state.term && this.state.term}
+              {this.state.showComponentTerms ? this.state.term && this.state.term : null}
             </Row>
             </Container>
+            
         </div>
         
         
