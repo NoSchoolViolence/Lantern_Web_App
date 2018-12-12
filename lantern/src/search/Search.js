@@ -74,6 +74,8 @@ class Search extends Component {
             </Container>
         </div>
         
+        
+        
       </div>
     )
   }
