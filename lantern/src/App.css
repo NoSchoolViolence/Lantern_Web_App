@@ -1,5 +1,8 @@
 .App {
+  flex-direction: column;
   text-align: center;
+  min-height: 100%;
+  align-items: stretch;
 }
 
 .App-logo {
@@ -20,6 +23,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.viewContent {
+  min-height: 100%;
+  margin-bottom: 200px;
 }
 
 /* CORRELLATION LIST STYLING */
@@ -50,6 +58,7 @@
 
 .percentContainer {
   border: 1px solid black;
+  margin-bottom: 25px;
 }
 
 .ItemPercent {
@@ -96,4 +105,40 @@
 
 .display-none {
   display: none;
+}
+
+.buttonSpace {
+  justify-content: space-around;
+}
+
+/* HEADER STYLING */
+
+header {
+  display: flex;
+  border: 3px solid black;
+  justify-content: space-between;
+}
+
+header > img {
+  height: 100px;
+}
+
+.headerLink {
+  text-decoration: none;
+  color: black;
+}
+
+.headerText {
+  align-self: center;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  border: 3px solid black;
+  background-color: white;
+  margin-top: 360px;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
 }

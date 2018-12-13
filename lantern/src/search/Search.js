@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import Results from '../results/results';
-import ROUTES from "../routes";
-
 
 class Search extends Component {
   constructor(props){
