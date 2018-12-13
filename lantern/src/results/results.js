@@ -29,22 +29,21 @@ class Results extends Component {
             <button className='sendButton'>Send to Other</button>
           </div>
         </Modal>
+              <div><a href={ROUTES.SEARCH}>Clear</a></div>
 
         <h1>Results</h1>
-        <div><a href={ROUTES.SEARCH}>Back</a></div>
         <div className="Correlation">
           <h2>Correlation</h2>
           <CorrelationList />
         </div>
-        <div onClick={() => this.showModal()}>
-            School information goes here
-        </div>
-        <div>
-          Searched Behaviors go here
-        </div>
+        <button onClick={() => this.showModal()}>
+            Share data
+        </button>       
       </div>
     );
   }
 }
 
 export default Results;
+
+
