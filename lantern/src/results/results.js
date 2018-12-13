@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CorrelationList from "./components/correllationList";
 import Modal from './components/modal';
+import dataset from '../data/data';
 import ROUTES from "../routes";
 
 class Results extends Component {
@@ -23,6 +24,7 @@ class Results extends Component {
     return (
       <div className="Results">
         <Modal show={this.state.showSchool} handleClose={this.hideModal}>
+          {console.log(dataset)}
           <p>Some kind of information will go here:</p>
           <div className='buttonSpace'>
             <button className='sendButton'>Send to Teacher</button>
