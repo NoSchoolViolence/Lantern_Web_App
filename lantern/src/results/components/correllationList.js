@@ -74,6 +74,7 @@ class CorrellationList extends Component {
 
                 <div onClick={() => this.showModal(i)} className='CorrellationItem' >
                   <h3>Violence Type: {item.name}</h3>
+                  {console.log(this.props.data)}
                   <div className='percentContainer'>
                     <div className="ItemPercent" style={ pStyle }>
                     </div>

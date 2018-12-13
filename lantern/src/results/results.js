@@ -11,6 +11,8 @@ class Results extends Component {
     }
   }
 
+  // functions to show and hide modal for sharing to school
+  
   showModal = () => {
     this.setState({ showSchool: true });
   }
@@ -23,6 +25,7 @@ class Results extends Component {
     return (
       <div className="Results">
         <Modal show={this.state.showSchool} handleClose={this.hideModal}>
+          {/* {console.log(this.props.data)} */}
           <p>Some kind of information will go here:</p>
           <div className='buttonSpace'>
             <button className='sendButton'>Send to Teacher</button>
@@ -34,7 +37,7 @@ class Results extends Component {
         <h1>Results</h1>
         <div className="Correlation">
           <h2>Correlation</h2>
-          <CorrelationList />
+          <CorrelationList data={this.props.data}/>
         </div>
         <button onClick={() => this.showModal()}>
             Share data
