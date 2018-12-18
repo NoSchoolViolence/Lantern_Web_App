@@ -2,7 +2,7 @@
 Last edited: 12/09/2018
 Edited by: Neelima Potharaj 
 
-Contributors: David Stoll, Jimmy Chang, Neelima Potharaj, Patrizia Trammel
+Contributors: David Stoll, Jimmy Chang, Neelima Potharaj, Patrizia Trammell
 
 Lantern Frontend First Version: Basic Wireframe Design and Initial Setup 
 
