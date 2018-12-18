@@ -22,6 +22,12 @@ class CorrellationList extends Component {
     this.setState({ activeIndex: null })
   }
 
+
+// Displays a div 
+// when the 2nd search term equals the 1st item.name from listOfViolences 
+// in the sample dataset in data.js
+
+
   render() {
     
     const terms = (this.state.data).map((term,index)=>
