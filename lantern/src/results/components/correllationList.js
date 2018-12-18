@@ -8,7 +8,8 @@ class CorrellationList extends Component {
     this.state = { 
       showDetails: false,
       activeIndex: null,
-      data: this.props.dataset
+      data: this.props.dataset,
+      terms: this.props.terms
     };
   }
 
@@ -22,11 +23,36 @@ class CorrellationList extends Component {
   }
 
   render() {
-    const terms = (this.state.data).map((term,index)=>(
+    
+    const terms = (this.state.data).map((term,index)=>
+      term.listOfViolence.map((item, i) => {
+        if (item.name == this.state.terms[1]) {
+        const pStyle = {
+            height: 50,
+            width: `${item.percentage}%`
+            
+          }
+        return (
+          <div key={i} className="CorrellationContainer">
+          <div className='CorrellationItem' >
+                  <h3>Violence Type: {item.name}</h3>
+                  <div className='percentContainer'>
+                    <div className="ItemPercent" style={ pStyle }>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+        )
+        
+        
+        
+        
+        }
+      }
+        
       
-      term.listOfViolence.map((item, i) =>
-        <p>{item.name}</p>
-      )
+      
     ))
 
 
