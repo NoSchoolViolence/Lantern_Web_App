@@ -94,7 +94,7 @@ class Search extends Component {
             
               {/* Displays Results */}
                   {this.state.showComponentResults ?
-                <Results data={this.state.terms} />:
+                <Results terms={this.state.terms} />:
                null
                   }
           </div>
