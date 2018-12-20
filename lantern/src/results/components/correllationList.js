@@ -9,7 +9,7 @@ class CorrellationList extends Component {
       showDetails: false,
       activeIndex: null,
       data: this.props.dataset,
-      terms: this.props.terms.join(', '),
+      terms: this.props.terms.join(', ').toLowerCase(),
     };
   }
 
@@ -22,17 +22,15 @@ class CorrellationList extends Component {
     this.setState({ activeIndex: null })
   }
 
-  // findList = () => {
-  //   let termString = this.state.terms.join(', ');
-  //   // console.log(termString);
-  //   this.setState({ searchString: termString });
-  // }
 // Displays a div 
 // when the 2nd search term equals the 1st item.name from listOfViolences 
 // in the sample dataset in data.js
 
 
   render() {
+
+    // Finds the violence list that we're looking for based on the search terms
+    
     let violenceList = null;
     for (let i = 0; i < this.state.data.length; i++) {
       if (this.state.data[i].name === this.state.terms) {
@@ -56,7 +54,7 @@ class CorrellationList extends Component {
                   <p><strong>Description:</strong> { item.description }</p>
                   <a href={item.link}>More Information</a>
                 </Modal>
-                
+
                 <div onClick={() => this.showModal(i)} className='CorrellationItem' >
                   <h3>Violence Type: {item.name}</h3>
                   <div className='percentContainer'>
