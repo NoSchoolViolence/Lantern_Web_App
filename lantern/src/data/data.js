@@ -1,30 +1,52 @@
 //case study behavior 
   const dataset = [
       {
-        id: "1",
         name: "bullied, poor grades",
-        percentage: 94,
-        description: "weapons use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
-        link: 'placeholder',
         listOfViolence: [
             {
-              id: "1",
-              name: "fighting",
+              name: "Fighting",
               percentage: 65,
               description: "weapons use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
               link: 'placeholder'
-            },
-            {
-              id: "2",
+            }, {
               name: "Stealing",
-              percentage: 65,
+              percentage: 55,
+              description: "sexual harassment Vivamus commodo leo et ex tempus, a placerat elit molestie. Mauris eget vulputate nisi. Nulla aliquam sit amet ligula luctus fermentum. Vivamus ligula tellus, suscipit non dignissim quis, accumsan at massa. In ipsum lectus, scelerisque sit amet tempus quis, consectetur sit amet lectus. Morbi interdum dui nec nisi molestie, sed gravida velit cursus. Morbi vel feugiat est. Curabitur vitae imperdiet lacus. Morbi porta, est vel iaculis volutpat, elit ex ullamcorper risus, vel condimentum metus purus non odio.",
+              link: 'placeholder'
+            }, {
+              name: "Drug Use",
+              percentage: 44,
+              description: "sexual harassment Vivamus commodo leo et ex tempus, a placerat elit molestie. Mauris eget vulputate nisi. Nulla aliquam sit amet ligula luctus fermentum. Vivamus ligula tellus, suscipit non dignissim quis, accumsan at massa. In ipsum lectus, scelerisque sit amet tempus quis, consectetur sit amet lectus. Morbi interdum dui nec nisi molestie, sed gravida velit cursus. Morbi vel feugiat est. Curabitur vitae imperdiet lacus. Morbi porta, est vel iaculis volutpat, elit ex ullamcorper risus, vel condimentum metus purus non odio.",
+              link: 'placeholder'
+            }, {
+              name: 'Weapon',
+              percentage: 23,
               description: "sexual harassment Vivamus commodo leo et ex tempus, a placerat elit molestie. Mauris eget vulputate nisi. Nulla aliquam sit amet ligula luctus fermentum. Vivamus ligula tellus, suscipit non dignissim quis, accumsan at massa. In ipsum lectus, scelerisque sit amet tempus quis, consectetur sit amet lectus. Morbi interdum dui nec nisi molestie, sed gravida velit cursus. Morbi vel feugiat est. Curabitur vitae imperdiet lacus. Morbi porta, est vel iaculis volutpat, elit ex ullamcorper risus, vel condimentum metus purus non odio.",
               link: 'placeholder'
             }
-            
           ]
       },
-      
+      {
+        name: "bullied, poor grades, nazi interests",
+        listOfViolence: [
+          {
+            name: "stealing",
+            percentage: 65,
+            description: "weapons use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+            link: 'placeholder'
+          }, {
+            name: "Making Threats",
+            percentage: 60,
+            description:"weapons use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+            link: 'placeholder'
+          }, {
+            name: "Weapons Use",
+            percentage: 44,
+            description: "weapons use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+            link: 'placeholder'
+          }
+        ]
+      }
     ];
 // const dataset = [
 //   {

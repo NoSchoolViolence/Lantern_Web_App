@@ -27,7 +27,6 @@ class Results extends Component {
       <div className="Results">
       {/* Pop-up window with the share button under stats */}
         <Modal show={this.state.showSchool} handleClose={this.hideModal}>
-          {console.log(dataset)}
           <p>Some kind of information will go here:</p>
           <div className='buttonSpace'>
             <button className='sendButton'>Send to Teacher</button>
