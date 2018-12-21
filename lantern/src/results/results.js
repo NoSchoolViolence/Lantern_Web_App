@@ -9,6 +9,8 @@ class Results extends Component {
     super(props);
     this.state = {
       showSchool: false,
+      dataset: dataset, 
+      terms: this.props.terms
     }
   }
 
@@ -23,21 +25,24 @@ class Results extends Component {
   render() {
     return (
       <div className="Results">
+      {/* Pop-up window with the share button under stats */}
         <Modal show={this.state.showSchool} handleClose={this.hideModal}>
-          {console.log(dataset)}
           <p>Some kind of information will go here:</p>
           <div className='buttonSpace'>
             <button className='sendButton'>Send to Teacher</button>
             <button className='sendButton'>Send to Other</button>
           </div>
         </Modal>
+        {/* Clear button to clear the list of search terms  */}
               <div><a href={ROUTES.SEARCH}>Clear</a></div>
 
         <h1>Results</h1>
         <div className="Correlation">
           <h2>Correlation</h2>
-          <CorrelationList />
+          {/* printing the stats */}
+          <CorrelationList dataset={this.state.dataset} terms={this.state.terms} />
         </div>
+          {/* share button under the stats */}
         <button onClick={() => this.showModal()}>
             Share data
         </button>       
