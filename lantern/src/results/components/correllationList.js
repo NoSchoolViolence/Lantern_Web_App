@@ -30,7 +30,7 @@ class CorrellationList extends Component {
   render() {
 
     // Finds the violence list that we're looking for based on the search terms
-    
+
     let violenceList = null;
     for (let i = 0; i < this.state.data.length; i++) {
       if (this.state.data[i].name === this.state.terms) {
@@ -51,6 +51,7 @@ class CorrellationList extends Component {
             return (
               <div key={i} className="CorrellationContainer">
               <Modal show={this.state.activeIndex === i ? true : false} handleClose={this.hideModal}>
+                <h3><strong>{ item.name }: {item.percentage}%</strong></h3>
                   <p><strong>Description:</strong> { item.description }</p>
                   <a href={item.link}>More Information</a>
                 </Modal>

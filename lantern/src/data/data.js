@@ -3,6 +3,7 @@
     {
       name: 'bullied'
     }, {
+      id: "1",
       name: "bullied, poor grades",
       listOfViolence: [
           {
@@ -133,6 +134,201 @@
           name: "Drug Use",
           percentage: 27,
           description: "Drug Use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }
+      ]
+    }, {
+      name: "secret journal, prozac medicated 60mg, shy, facebook",
+      listOfViolence: [
+        {
+          name: "Stealing",
+          percentage: 55,
+          description: "Stealing Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Making Threats",
+          percentage: 54,
+          description: "Making Threats Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Intimidation",
+          percentage: 67,
+          description: "intimidation Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }
+      ]
+    }, {
+      name: 'secret journal, prozac medicated 60mg, shy, facebook, destructive fantasies, broke up with girlfriend',
+      listOfViolence: [
+        {
+          name: "Drug Use",
+          percentage: 65,
+          description: "Drug Use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Stealing",
+          percentage: 81,
+          description: "Stealing Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Weapons Use",
+          percentage: 55,
+          description: "Weapons Use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }
+      ]
+    }, {
+      name: "single parent family, social anxiety, no friends",
+      listOfViolence: [
+        {
+          name: "Stealing",
+          percentage: 55,
+          description: "Stealing Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Drug Use",
+          percentage: 44,
+          description: "Drug Use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }
+      ]
+    }, {
+      name: 'single parent family, social anxiety, no friends, socialization delays',
+      listOfViolence: [
+        {
+          name: "Fighting",
+          percentage: 43,
+          description: "Fighting Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Drug Use",
+          percentage: 39,
+          description: "Drug Use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Weapon",
+          percentage: 23,
+          description: "Weapon Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }
+      ]
+    }, {
+      name: 'single parent family, social anxiety, no friends, socialization delays, suffered from anorexia',
+      listOfViolence: [
+        {
+          name: "Making Threats",
+          percentage: 60,
+          description: "Making Threats Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Stealing",
+          percentage: 44,
+          description: "Stealing Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Weapons Use",
+          percentage: 45,
+          description: "Weapons Use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }
+      ]
+    }, {
+      name: 'single parent family, social anxiety, no friends, socialization delays, suffered from anorexia, long black coat',
+      listOfViolence: [
+        {
+          name: "Fighting",
+          percentage: 43,
+          description: "Fighting Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Ostracizing",
+          percentage: 56,
+          description: "Ostracizing Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Weapons Use",
+          percentage: 96,
+          description: "Weapons Use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }
+      ]
+    }, {
+      name: 'adopted, kicked doors, cursed at teachers',
+      listOfViolence: [
+        {
+          name: "Stealing",
+          percentage: 55,
+          description: "Stealing Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Gang Activities",
+          percentage: 54,
+          description: "Gang Activities Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Drug Use",
+          percentage: 44,
+          description: "Drug Use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }
+      ]
+    }, {
+      name: 'adopted, kicked doors, cursed at teachers, disruptive',
+      listOfViolence: [
+        {
+          name: "Fighting",
+          percentage: 60,
+          description: "Fighting Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Drug Use",
+          percentage: 55,
+          description: "Drug Use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Sexual Harassment",
+          percentage: 53,
+          description: "Sexual Harassment Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }
+      ]
+    }, {
+      name: 'adopted, kicked doors, cursed at teachers, disruptive, talking about guns',
+      listOfViolence: [
+        {
+          name: "Making Threats",
+          percentage: 60,
+          description: "Making Threats Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Stealing",
+          percentage: 44,
+          description: "Stealing Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Weapons Use",
+          percentage: 67,
+          description: "Weapons Use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }
+      ]
+    }, {
+      name: 'adopted, kicked doors, cursed at teachers, disruptive, talking about guns, backpack with bullets',
+      listOfViolence: [
+        {
+          name: "Fighting",
+          percentage: 43,
+          description: "Fighting Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Ostracizing",
+          percentage: 73,
+          description: "Ostracizing Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
+          link: 'placeholder'
+        }, {
+          name: "Weapons Use",
+          percentage: 98,
+          description: "Weapons Use Nunc pharetra lorem quam, sed iaculis neque facilisis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu leo quis justo ultricies hendrerit. Nam mollis hendrerit ante accumsan volutpat. Duis euismod mollis ante a maximus. Ut ac urna et dui ultrices pretium id eu augue. Integer sit amet orci non dolor aliquet mattis. Donec pharetra placerat massa, sed euismod mauris vehicula sed. Morbi sit amet rhoncus enim. In ullamcorper finibus imperdiet.",
           link: 'placeholder'
         }
       ]
