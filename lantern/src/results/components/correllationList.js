@@ -9,7 +9,7 @@ class CorrellationList extends Component {
       showDetails: false,
       activeIndex: null,
       data: this.props.dataset,
-      terms: this.props.terms
+      terms: this.props.terms.join(', ').toLowerCase(),
     };
   }
 
@@ -22,47 +22,54 @@ class CorrellationList extends Component {
     this.setState({ activeIndex: null })
   }
 
+// Displays a div 
+// when the 2nd search term equals the 1st item.name from listOfViolences 
+// in the sample dataset in data.js
+
+
   render() {
-    
-    const terms = (this.state.data).map((term,index)=>
-      term.listOfViolence.map((item, i) => {
-        if (item.name == this.state.terms[1]) {
-        const pStyle = {
-            height: 50,
-            width: `${item.percentage}%`
-            
-          }
-        return (
-          <div key={i} className="CorrellationContainer">
-          <div className='CorrellationItem' >
+
+    // Finds the violence list that we're looking for based on the search terms
+
+    let violenceList = null;
+    for (let i = 0; i < this.state.data.length; i++) {
+      if (this.state.data[i].name === this.state.terms) {
+        violenceList = this.state.data[i].listOfViolence
+      }
+    }
+
+    return (
+      <div className="CorrellationList">
+        {
+          violenceList.map((item, i) => {
+
+            const pStyle = {
+                height: 50,
+                width: `${item.percentage}%`
+            }
+
+            return (
+              <div key={i} className="CorrellationContainer">
+              <Modal show={this.state.activeIndex === i ? true : false} handleClose={this.hideModal}>
+                <h3><strong>{ item.name }: {item.percentage}%</strong></h3>
+                  <p><strong>Description:</strong> { item.description }</p>
+                  <a href={item.link}>More Information</a>
+                </Modal>
+
+                <div onClick={() => this.showModal(i)} className='CorrellationItem' >
                   <h3>Violence Type: {item.name}</h3>
                   <div className='percentContainer'>
                     <div className="ItemPercent" style={ pStyle }>
                     </div>
                   </div>
                 </div>
-          </div>
-
-        )
-        
-        
-        
-        
+              </div>
+            )
+            })
         }
-      }
-        
-      
-      
-    ))
-
-
-    
-    return (
-      <div>{terms}</div> 
-    )
-
-    
-  }
+        </div>
+    );
+}
 
 }
 
