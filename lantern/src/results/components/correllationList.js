@@ -13,9 +13,13 @@ class CorrellationList extends Component {
     };
   }
 
+  // Method to show hidden model based on context - David
+
   showModal = (i) => {
     this.setState({ activeIndex: i })
   }
+
+  // Method to close out the model again. - David
 
   hideModal = () => {
     this.setState({ showDetails: false });
@@ -29,7 +33,7 @@ class CorrellationList extends Component {
 
   render() {
 
-    // Finds the violence list that we're looking for based on the search terms
+    // Finds the violence list that we're looking for based on the search terms - David
 
     let violenceList = null;
     for (let i = 0; i < this.state.data.length; i++) {
@@ -42,7 +46,7 @@ class CorrellationList extends Component {
       <div className="CorrellationList">
         {
           violenceList.map((item, i) => {
-
+            /* Applying inline style to dynamically represent filled in data  - David*/
             const pStyle = {
                 height: 50,
                 width: `${item.percentage}%`
@@ -50,11 +54,16 @@ class CorrellationList extends Component {
 
             return (
               <div key={i} className="CorrellationContainer">
+
+{/* Modal exists for each item. Will show on click - David*/}
+
               <Modal show={this.state.activeIndex === i ? true : false} handleClose={this.hideModal}>
                 <h3><strong>{ item.name }: {item.percentage}%</strong></h3>
                   <p><strong>Description:</strong> { item.description }</p>
                   <a href={item.link}>More Information</a>
                 </Modal>
+
+{/* Violence type and percentage show for each item. Clickable to display modal - David*/}
 
                 <div onClick={() => this.showModal(i)} className='CorrellationItem' >
                   <h3>Violence Type: {item.name}</h3>

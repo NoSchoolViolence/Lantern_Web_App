@@ -2,6 +2,8 @@ import React from 'react';
 import ROUTES from '../routes';
 import Logo from './assets/nsv.png';
 
+// Header to contain nsv logo along with Lantern title - David
+
 const Header = () => {
   return (
     <header>
