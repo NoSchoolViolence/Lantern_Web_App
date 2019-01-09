@@ -10,7 +10,6 @@ class Results extends Component {
     this.state = {
       showSchool: false,
       dataset: dataset, 
-      terms: this.props.terms
     }
   }
 
@@ -40,7 +39,7 @@ class Results extends Component {
         <div className="Correlation">
           <h2>Correlation</h2>
           {/* printing the stats */}
-          <CorrelationList dataset={this.state.dataset} terms={this.state.terms} />
+          <CorrelationList dataset={this.state.dataset} terms={this.props.terms} />
         </div>
           {/* share button under the stats */}
         <button onClick={() => this.showModal()}>
