@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CorrelationList from "./components/correllationList";
 import Modal from './components/modal';
 import dataset from '../data/data';
+import termsInData from '../data/terms';
 import ROUTES from "../routes";
 
 class Results extends Component {

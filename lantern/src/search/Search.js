@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import Results from '../results/results';
+import dataTerms from '../data/terms';
 
 class Search extends Component {
   constructor(props){
@@ -16,28 +17,35 @@ class Search extends Component {
     }
   
     
-    this.handleSubmit = this.handleSubmit.bind(this)
+    // this.handleSubmit = this.handleSubmit.bind(this)
     this.addTerm = this.addTerm.bind(this);
     this.removeTerm = this.removeTerm.bind(this);
     this.term = this.term.bind(this);  
   }
 
-  // this function is to clear the default behavior of "form" component
-  handleSubmit(event){
-    event.preventDefault()
-    //event.target.name(event)
-  }
-
   // this function is to set the state for state variable "term" with the entered value in the text field
   term(event) {
-    this.setState({term:event.target.value})
+    this.setState({ term: event.target.value })
   }
+
+  //  Called in addTerm below
 
   // this function is to add the entered term into the list "terms"
   addTerm(event) {
+    event.preventDefault();
     if (!this.state.term) return
+    const loweredTerm = this.state.term.toLowerCase().trim();
+
+    // To check if the entered term exists in our database.
+
+    if (!dataTerms.includes(loweredTerm)) {
+      alert('that term does not exist in our database');
+      event.target[0].value = '';
+      return;
+    }
+
     const terms = this.state.terms;
-    terms.push(this.state.term);
+    terms.push(loweredTerm);
     this.setState({
       terms:terms,
       term:'',
@@ -68,9 +76,9 @@ class Search extends Component {
         <div>
           
           <div>
-            <form  onSubmit={this.handleSubmit}>
+            <form onSubmit={this.addTerm}>
               <input value={this.state.term} onChange={this.term}/>
-              <button type="add" onClick={this.addTerm}>Add</button>
+              <button type="add">Add</button>
             </form>
             {/* Displays Terms */}
             
@@ -83,7 +91,7 @@ class Search extends Component {
             </Container>
             
             {/* Displays Results */}
-            {this.state.showComponentResults ? <Results terms={this.state.terms.join(', ').toLowerCase()} /> : null}
+            {this.state.showComponentResults ? <Results terms={this.state.terms.join(', ')} /> : null}
           </div>
             
         </div>
