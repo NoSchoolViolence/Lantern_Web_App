@@ -19,9 +19,7 @@ class Search extends Component {
     this.handleSubmit = this.handleSubmit.bind(this)
     this.addTerm = this.addTerm.bind(this);
     this.removeTerm = this.removeTerm.bind(this);
-    this.term = this.term.bind(this);
-    this.submitPage = this.submitPage.bind(this);
-  
+    this.term = this.term.bind(this);  
   }
 
   // this function is to clear the default behavior of "form" component
@@ -38,9 +36,13 @@ class Search extends Component {
   // this function is to add the entered term into the list "terms"
   addTerm(event) {
     if (!this.state.term) return
-    const terms = this.state.terms
-    terms.push(this.state.term)
-    this.setState({terms:terms, term:''})
+    const terms = this.state.terms;
+    terms.push(this.state.term);
+    this.setState({
+      terms:terms,
+      term:'',
+      showComponentResults: true
+      })
   }
 
   // this function is to remove a term from the list "terms"
@@ -48,14 +50,6 @@ class Search extends Component {
     const terms = this.state.terms
     terms.splice(index, 1)    
     this.setState({terms})
-  }
-
-  submitPage(){
-    this.setState({
-      showComponentResults: true,
-      // does not display terms if set to false
-      showComponentTerms: true
-    });
   }
   
 
@@ -77,10 +71,6 @@ class Search extends Component {
             <form  onSubmit={this.handleSubmit}>
               <input value={this.state.term} onChange={this.term}/>
               <button type="add" onClick={this.addTerm}>Add</button>
-              <div>
-              <button type="submit" onClick={this.submitPage}>Submit</button>
-             
-              </div>
             </form>
             {/* Displays Terms */}
             
@@ -92,17 +82,11 @@ class Search extends Component {
             </Row>
             </Container>
             
-              {/* Displays Results */}
-                  {this.state.showComponentResults ?
-                <Results terms={this.state.terms} />:
-               null
-                  }
+            {/* Displays Results */}
+            {this.state.showComponentResults ? <Results terms={this.state.terms.join(', ').toLowerCase()} /> : null}
           </div>
-          
             
         </div>
-        
-        
         
       </div>
     )

@@ -9,7 +9,7 @@ class CorrellationList extends Component {
       showDetails: false,
       activeIndex: null,
       data: this.props.dataset,
-      terms: this.props.terms.join(', ').toLowerCase(),
+      terms: this.props.terms
     };
   }
 
@@ -37,9 +37,17 @@ class CorrellationList extends Component {
 
     let violenceList = null;
     for (let i = 0; i < this.state.data.length; i++) {
-      if (this.state.data[i].name === this.state.terms) {
+      if (this.state.data[i].name === this.props.terms) {
         violenceList = this.state.data[i].listOfViolence
       }
+    }
+    if (!violenceList)
+    {
+      return ( 
+      <div className="CorrellationList">
+        <p>Not Enough Information</p>
+      </div>
+      );
     }
 
     return (
