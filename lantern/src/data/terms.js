@@ -1,4 +1,4 @@
-// An array to hold all search terms existing in our data
+// An array to hold all search terms existing in our data - David
 
 const searchTerms = [
   'bullied',

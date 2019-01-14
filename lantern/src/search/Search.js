@@ -28,8 +28,6 @@ class Search extends Component {
     this.setState({ term: event.target.value })
   }
 
-  //  Called in addTerm below
-
   // this function is to add the entered term into the list "terms"
   addTerm(event) {
     event.preventDefault();
@@ -43,6 +41,8 @@ class Search extends Component {
       event.target[0].value = '';
       return;
     }
+
+    // resetting the state to inclues the new array of terms to display from.
 
     const terms = this.state.terms;
     terms.push(loweredTerm);
@@ -63,8 +63,8 @@ class Search extends Component {
 
   render(){
     const terms = (this.state.terms).map((term,index)=>(
-      <Col sm={3}>
-        {term} <button name="remove" onClick={event=>this.removeTerm(index,event)}>x</button>
+      <Col sm={3} key={index}>
+        {term} <button name="remove" onClick={ event => this.removeTerm(index, event) }>x</button>
       </Col>
     ))
 
