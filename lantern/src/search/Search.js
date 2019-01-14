@@ -12,6 +12,7 @@ class Search extends Component {
     this.state = {
       name: 'Enter the behaviors you noticed',
       terms: [],
+      term: '',
       showComponentResults: false,
       showComponentTerms: true
     }
