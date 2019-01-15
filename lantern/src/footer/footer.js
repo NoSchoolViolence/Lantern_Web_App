@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Footer to contain contact information for noschoolviolence - David
+// Modeled after nsv's current site - David
+
 const Footer = () => {
   return (
     <footer>

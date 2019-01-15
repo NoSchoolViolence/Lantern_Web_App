@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import Results from '../results/results';
+import dataTerms from '../data/terms';
 
 class Search extends Component {
   constructor(props){
@@ -11,36 +12,46 @@ class Search extends Component {
     this.state = {
       name: 'Enter the behaviors you noticed',
       terms: [],
+      term: '',
       showComponentResults: false,
       showComponentTerms: true
     }
   
     
-    this.handleSubmit = this.handleSubmit.bind(this)
+    // this.handleSubmit = this.handleSubmit.bind(this)
     this.addTerm = this.addTerm.bind(this);
     this.removeTerm = this.removeTerm.bind(this);
-    this.term = this.term.bind(this);
-    this.submitPage = this.submitPage.bind(this);
-  
-  }
-
-  // this function is to clear the default behavior of "form" component
-  handleSubmit(event){
-    event.preventDefault()
-    //event.target.name(event)
+    this.term = this.term.bind(this);  
   }
 
   // this function is to set the state for state variable "term" with the entered value in the text field
   term(event) {
-    this.setState({term:event.target.value})
+    this.setState({ term: event.target.value })
   }
 
   // this function is to add the entered term into the list "terms"
   addTerm(event) {
+    event.preventDefault();
     if (!this.state.term) return
-    const terms = this.state.terms
-    terms.push(this.state.term)
-    this.setState({terms:terms, term:''})
+    const loweredTerm = this.state.term.toLowerCase().trim();
+
+    // To check if the entered term exists in our database.
+
+    if (!dataTerms.includes(loweredTerm)) {
+      alert('that term does not exist in our database');
+      event.target[0].value = '';
+      return;
+    }
+
+    // resetting the state to inclues the new array of terms to display from.
+
+    const terms = this.state.terms;
+    terms.push(loweredTerm);
+    this.setState({
+      terms:terms,
+      term:'',
+      showComponentResults: true
+      })
   }
 
   // this function is to remove a term from the list "terms"
@@ -49,20 +60,12 @@ class Search extends Component {
     terms.splice(index, 1)    
     this.setState({terms})
   }
-
-  submitPage(){
-    this.setState({
-      showComponentResults: true,
-      // does not display terms if set to false
-      showComponentTerms: true
-    });
-  }
   
 
   render(){
     const terms = (this.state.terms).map((term,index)=>(
-      <Col sm={3}>
-        {term} <button name="remove" onClick={event=>this.removeTerm(index,event)}>x</button>
+      <Col sm={3} key={index}>
+        {term} <button name="remove" onClick={ event => this.removeTerm(index, event) }>x</button>
       </Col>
     ))
 
@@ -74,13 +77,9 @@ class Search extends Component {
         <div>
           
           <div>
-            <form  onSubmit={this.handleSubmit}>
+            <form onSubmit={this.addTerm}>
               <input value={this.state.term} onChange={this.term}/>
-              <button type="add" onClick={this.addTerm}>Add</button>
-              <div>
-              <button type="submit" onClick={this.submitPage}>Submit</button>
-             
-              </div>
+              <button type="add">Add</button>
             </form>
             {/* Displays Terms */}
             
@@ -92,17 +91,11 @@ class Search extends Component {
             </Row>
             </Container>
             
-              {/* Displays Results */}
-                  {this.state.showComponentResults ?
-                <Results terms={this.state.terms} />:
-               null
-                  }
+            {/* Displays Results */}
+            {this.state.showComponentResults ? <Results terms={this.state.terms.join(', ')} /> : null}
           </div>
-          
             
         </div>
-        
-        
         
       </div>
     )
