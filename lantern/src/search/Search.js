@@ -25,11 +25,16 @@ class Search extends Component {
     this.addTerm = this.addTerm.bind(this);
     this.removeTerm = this.removeTerm.bind(this);
     this.term = this.term.bind(this);  
+    this.closeModal = this.closeModal.bind(this);
   }
 
   // this function is to set the state for state variable "term" with the entered value in the text field
   term(event) {
     this.setState({ term: event.target.value })
+  }
+
+  closeModal () {
+    this.setState({open:false})
   }
 
   // this function is to add the entered term into the list "terms"
@@ -42,8 +47,9 @@ class Search extends Component {
 
     if (!dataTerms.includes(loweredTerm)) {
       
-      alert('that term does not exist in our database');
+      // alert('that term does not exist in our database');
       event.target[0].value = '';
+      this.setState({open:true})
       return;
     }
 
@@ -85,6 +91,21 @@ class Search extends Component {
               <input value={this.state.term} onChange={this.term}/>
               <button type="add">Add</button>
             </form>
+            <Popup className="popup-main"
+          open={this.state.open}
+          closeOnDocumentClick
+          onClose={this.closeModal}
+        >
+          
+            <a className="close" onClick={this.closeModal}>
+            <div className="popup">
+            Query term not in the database, please try a different term. 
+          </div>
+            </a>
+           
+        </Popup>
+
+
             {/* Displays Terms */}
             
             <Container>

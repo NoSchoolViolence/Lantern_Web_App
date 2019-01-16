@@ -195,8 +195,16 @@ footer {
   padding-bottom: 3%
 }
 
-.details{
-   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.popup-main{
+  width: 50%;
+  border: 3px solid black;
+  height: 20%;
+  white-space: pre-line;
+  overflow-wrap: normal;
+}
+
+.popup {
+  
+  height: 50%
+  
 }
