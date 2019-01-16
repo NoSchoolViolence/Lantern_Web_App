@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import Results from '../results/results';
 import dataTerms from '../data/terms';
+import "../App.css";
+import Popup from "reactjs-popup";
 
 class Search extends Component {
   constructor(props){
@@ -14,7 +16,8 @@ class Search extends Component {
       terms: [],
       term: '',
       showComponentResults: false,
-      showComponentTerms: true
+      showComponentTerms: true,
+      open:false
     }
   
     
@@ -38,6 +41,7 @@ class Search extends Component {
     // To check if the entered term exists in our database.
 
     if (!dataTerms.includes(loweredTerm)) {
+      
       alert('that term does not exist in our database');
       event.target[0].value = '';
       return;
@@ -64,7 +68,7 @@ class Search extends Component {
 
   render(){
     const terms = (this.state.terms).map((term,index)=>(
-      <Col sm={3} key={index}>
+      <Col sm={0} key={index}>
         {term} <button name="remove" onClick={ event => this.removeTerm(index, event) }>x</button>
       </Col>
     ))
@@ -72,12 +76,12 @@ class Search extends Component {
 
     
     return (
-      <div>
+      <div className="Search-Main">
         <h1>{this.state.name}</h1>
-        <div>
+        
           
-          <div>
-            <form onSubmit={this.addTerm}>
+          <div className="Search-2">
+            <form className="Search-3" onSubmit={this.addTerm}>
               <input value={this.state.term} onChange={this.term}/>
               <button type="add">Add</button>
             </form>
@@ -95,7 +99,7 @@ class Search extends Component {
             {this.state.showComponentResults ? <Results terms={this.state.terms.join(', ')} /> : null}
           </div>
             
-        </div>
+    
         
       </div>
     )
