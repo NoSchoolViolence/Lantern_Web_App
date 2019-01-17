@@ -9,9 +9,9 @@ import ROUTES from '../routes';
 const Landing = () => {
   return (
     <div className='landing-page-div'>
-      <div><a href={ROUTES.SEARCH}>SEARCH</a></div>
       <AbtLantern/>
-      <AbtNSV/>
+      {/* <AbtNSV/> */}
+      <div><a href={ROUTES.SEARCH}><button type="add">Begin Your Search</button></a></div>
     </div>
   )
 };

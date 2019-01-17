@@ -56,7 +56,7 @@ class CorrellationList extends Component {
           violenceList.map((item, i) => {
             /* Applying inline style to dynamically represent filled in data  - David*/
             const pStyle = {
-                height: 50,
+                height: 15,
                 width: `${item.percentage}%`
             }
 
@@ -67,7 +67,7 @@ class CorrellationList extends Component {
 
               <Modal show={this.state.activeIndex === i ? true : false} handleClose={this.hideModal}>
                 <h3><strong>{ item.name }: {item.percentage}%</strong></h3>
-                  <p><strong>Description:</strong> { item.description }</p>
+                  <p className="description"><strong>Description:</strong> { item.description }</p>
                   <a href={item.link}>More Information</a>
                 </Modal>
 

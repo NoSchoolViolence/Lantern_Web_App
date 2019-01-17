@@ -35,7 +35,7 @@ class Results extends Component {
         {/* Clear button to clear the list of search terms  */}
               <div><a href={ROUTES.SEARCH}>Clear</a></div>
 
-        <h1>Results</h1>
+        {/* <h1>Results</h1> */}
         <div className="Correlation">
           <h2>Correlation</h2>
           {/* printing the stats */}
