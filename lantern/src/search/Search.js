@@ -74,7 +74,7 @@ class Search extends Component {
 
   render(){
     const terms = (this.state.terms).map((term,index)=>(
-      <Col sm={0} key={index}>
+      <Col xs key={index}>
         {term} <button name="remove" onClick={ event => this.removeTerm(index, event) }>x</button>
       </Col>
     ))
