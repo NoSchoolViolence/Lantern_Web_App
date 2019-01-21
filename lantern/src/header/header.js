@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header>
       <img src={Logo} alt='nsv Logo'></img>
-      <h1 className='headerText'><a href={ROUTES.LANDING} className='headerLink'>The Lantern</a></h1>
+      <h1 className='headerText'><a href={ROUTES.LANDING} className='headerLink'>The Lantern Query App</a></h1>
       <img src={Logo} alt='nsv Logo'></img>
     </header>
   )

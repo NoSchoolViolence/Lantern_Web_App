@@ -10,8 +10,8 @@ const Landing = () => {
   return (
     <div className='landing-page-div'>
       <AbtLantern/>
-      {/* <AbtNSV/> */}
-      <div><a href={ROUTES.SEARCH}><button type="add">Begin Your Search</button></a></div>
+      <AbtNSV/>
+      <div><a href={ROUTES.SEARCH}><button className="Landing-Button" type="add">Begin Your Search</button></a></div>
     </div>
   )
 };
