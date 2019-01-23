@@ -97,11 +97,11 @@ class Search extends Component {
           onClose={this.closeModal}
         >
           
-            <a className="close" onClick={this.closeModal}>
+            <div className="close" onClick={this.closeModal}>
             <div className="popup">
             Query term not in the database, please try a different term. 
           </div>
-            </a>
+            </div>
            
         </Popup>
 
