@@ -28,4 +28,4 @@ def dict_to_json(results):
     return json.dumps([{"results": inner}])
 
 
-print(dummy_model('[{"query": []}]'))  # test that the dummy model works
+# print(dummy_model('[{"query": []}]'))  # test that the dummy model works
