@@ -20,6 +20,7 @@ class Results extends Component {
   hideModal = () => {
     this.setState({ showSchool: false });
   }
+  
 
   render() {
     return (
@@ -33,7 +34,7 @@ class Results extends Component {
           </div>
         </Modal>
         {/* Clear button to clear the list of search terms  */}
-              <div><a href={ROUTES.SEARCH}>Clear</a></div>
+              
 
         {/* <h1>Results</h1> */}
         <div className="Correlation">
@@ -42,9 +43,12 @@ class Results extends Component {
           <CorrelationList dataset={this.state.dataset} terms={this.props.terms} />
         </div>
           {/* share button under the stats */}
+        <div>
         <button onClick={() => this.showModal()}>
-            Share data
-        </button>       
+            Share Data
+        </button>   &nbsp;
+        <button><a style={{ textDecoration: 'none' }} href={ROUTES.SEARCH}>Clear Data</a></button>
+        </div>
       </div>
     );
   }
