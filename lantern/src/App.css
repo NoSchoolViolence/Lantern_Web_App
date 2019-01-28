@@ -215,6 +215,7 @@ footer {
 }
 
 .Search-3 input{
+  border: 1px solid gray;
   height: 110%;
   size: 40;
   font-size: 110%;
