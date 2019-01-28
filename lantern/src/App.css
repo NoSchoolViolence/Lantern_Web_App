@@ -229,7 +229,7 @@ footer {
   font-weight: bold;
   font-family: "Helvetica Neue";
   color:#151615;
-  background-color: #089d4c;
+  background-color: #f2a53d;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-right: 1%;
@@ -237,7 +237,9 @@ footer {
   margin-left: 1%;
 }
 
-
+/* .Search-3 button:hover { 
+  background-color: #f2a53d;
+} */
 
 
 
@@ -271,6 +273,7 @@ footer {
   padding: 2%;
   font-family: "Helvetica Neue";
 }
+
 
 .Landing-Button:hover { 
   background-color: #089d4c;
