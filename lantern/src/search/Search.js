@@ -4,6 +4,7 @@ import Results from '../results/results';
 import dataTerms from '../data/terms';
 import "../App.css";
 import Popup from "reactjs-popup";
+import ROUTES from "../routes";
 
 class Search extends Component {
   constructor(props){
@@ -110,16 +111,18 @@ class Search extends Component {
             
             <Container>
             <Row>
+           
             {this.state.showComponentTerms ? terms : null}
             
               {this.state.showComponentTerms ? this.state.term && this.state.term : null}
+            
             </Row>
             </Container>
             
             {/* Displays Results */}
             {this.state.showComponentResults ? <Results terms={this.state.terms.join(', ')} /> : null}
           </div>
-            
+          
     
         
       </div>

@@ -56,7 +56,7 @@ class CorrellationList extends Component {
           violenceList.map((item, i) => {
             /* Applying inline style to dynamically represent filled in data  - David*/
             const pStyle = {
-                height: 15,
+                height: 20,
                 width: `${item.percentage}%`
             }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ROUTES from '../routes';
-import Logo from './assets/nsv.png';
+import Logo from './assets/nsv-logo_3.jpg';
 
 // Header to contain nsv logo along with Lantern title - David
 
