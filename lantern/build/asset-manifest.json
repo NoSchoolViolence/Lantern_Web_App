@@ -1,0 +1,13 @@
+{
+  "main.css": "/lantern/static/css/main.45bee8f2.chunk.css",
+  "main.js": "/lantern/static/js/main.3748a981.chunk.js",
+  "main.js.map": "/lantern/static/js/main.3748a981.chunk.js.map",
+  "static/js/1.1c4461aa.chunk.js": "/lantern/static/js/1.1c4461aa.chunk.js",
+  "static/js/1.1c4461aa.chunk.js.map": "/lantern/static/js/1.1c4461aa.chunk.js.map",
+  "runtime~main.js": "/lantern/static/js/runtime~main.bd1f967c.js",
+  "runtime~main.js.map": "/lantern/static/js/runtime~main.bd1f967c.js.map",
+  "static/css/main.45bee8f2.chunk.css.map": "/lantern/static/css/main.45bee8f2.chunk.css.map",
+  "index.html": "/lantern/index.html",
+  "precache-manifest.641cfcfa88e8dd93aa0b64ffe30fc208.js": "/lantern/precache-manifest.641cfcfa88e8dd93aa0b64ffe30fc208.js",
+  "service-worker.js": "/lantern/service-worker.js"
+}
