@@ -13,7 +13,7 @@ const AbtLantern = () => {
 
       {/* Update req from Paul  Jan 29th - Patrizia */}
       <p className="Landing-Lantern">
-      The Lantern  is a research tool that connects queries about  a child's behaviors with various types of violence. 
+      The Lantern  is a research tool that connects queries about a child's behaviors with various types of violence. <br />
       It allows parents and schools to automatically share their searches and concerns and then provides access to effective intervention programs. 
       <br /> The Lantern complies with all privacy laws.
     </p></div>
