@@ -160,7 +160,8 @@ header {
 }
 
 header > img {
-  height: 100px;
+  height: 10%;
+  width: 12%;
 }
 
 .headerLink {
