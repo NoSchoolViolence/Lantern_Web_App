@@ -251,7 +251,7 @@ header > img {
 .Landing-Lantern{
   font-size: 105%;
   /* font-style: italic; */
-  font-weight: bold;
+  font-style: normal;
   font-family: "Helvetica Neue";
   line-height: 2.5pc;
   padding-top: 2%;
